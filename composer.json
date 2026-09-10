@@ -1,0 +1,30 @@
+{
+    "name": "stehlik/paginator",
+    "description": "Paginator demo",
+    "type": "project",
+    "require": {
+        "php": "^8.2"
+    },
+    "autoload": {
+        "psr-4": {
+            "Paginator\\": "src/Paginator/",
+            "User\\": "src/User/"
+        },
+        "files": [
+            "src/Helpers.php"
+        ]
+    },
+    "authors": [
+        {
+            "name": "Tomáš Stehlík"
+        }
+    ],
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Tests\\": "tests/"
+        }
+    }
+}
