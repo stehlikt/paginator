@@ -28,4 +28,14 @@ final readonly class PaginationResult
         return $this->currentPage < $this->pagesCount;
     }
 
+    public function firstItemNumber(): int
+    {
+        return $this->itemsCount === 0 ? 0 : $this->offset + 1;
+    }
+
+    public function lastItemNumber(): int
+    {
+        return min($this->offset + $this->perPage, $this->itemsCount);
+    }
+
 }
